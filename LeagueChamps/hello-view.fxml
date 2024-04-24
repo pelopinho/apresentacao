@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.example.leaguechamps.Controller">
+
+    <Label text="Campeão escolhido:" layoutX="10" layoutY="10"/>
+    <TextField fx:id="campeaoTextField" layoutX="130" layoutY="10"/>
+
+    <Label text="Maestria (1 a 7):" layoutX="10" layoutY="70"/>
+    <TextField fx:id="maestriaTextField" layoutX="130" layoutY="70"/>
+
+    <Label text="Região (Role):" layoutX="10" layoutY="40"/>
+    <TextField fx:id="cidadeTextField" layoutX="130" layoutY="40"/>
+
+    <Button text="Escolher" layoutX="115" layoutY="125" onAction="#gerarFrase"/>
+
+    <Label fx:id="fraseLabel" layoutX="10" layoutY="160"/>
+
+    <ImageView fx:id="imageView" layoutX="10" layoutY="200"/>
+
+</AnchorPane>
